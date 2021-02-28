@@ -1,0 +1,178 @@
+/* body {
+    background-image: url(../images/nen3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} */
+body {
+    overflow-x: hidden;
+    text-align: center;
+}
+#wrapper {
+	background-color: #000;
+	font-size: 15px;
+    text-align: right;
+    color: white;
+	
+}
+.text-wrapper {
+	margin-top: 5px;
+}
+.text-wrapper p{
+    color: white;
+    font-weight: bold;
+}
+
+#bottomwrapper {
+    padding: 30px 0px;
+}
+#bottomwrapper form {
+    margin-top: 20px;
+}
+#bottomwrapper .group-btn {
+    text-align: right;
+}
+#bottomwrapper .group-btn button {
+    margin-top: 20px;
+    margin-right: 15px;
+
+}
+
+.logo img {
+    height: 80px;
+    width: 340px;
+}
+#menu {
+    width: 100%;
+    text-align: center;
+    background-color: #1f601f;
+}
+
+/* a {
+	color: white;
+} */
+#slider {
+	width: 100%;
+    max-height: 530px;
+    margin: 10px 0px;
+}
+a:hover{
+  	color: yellow;
+  	text-decoration: none;
+}
+.book {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.book p {
+    margin-bottom: 0px;
+}
+.book img {
+    margin-bottom: 30px;
+    width: 250px;
+    height: 300px;
+}
+
+.book a {
+    font-size: 25px;
+    color: black;
+}
+a {
+	color: white;
+}
+a:hover{
+  	color: yellow;
+  	text-decoration: none;
+}
+/* .logo{
+    height: 60px;
+    width: 150px;
+} */
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+.line-brand{
+    width: 100%;
+    border: 1px solid black;
+    background: black;
+}
+.text-brand{
+    padding: 0px 20px;
+}
+#footer-top {
+	background-color: #000;
+	padding-top: 60px;
+	padding-bottom: 40px;
+    border-bottom: 1px solid white;
+}
+.footer-widget {
+	color: white;
+	font-size: 14px;
+}
+.footer-widget h3 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.footer-widget .line {
+	height: 6px;
+	background-color: #393939;
+	border-radius: 3px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.btn-footer {
+	background-color: #1e1e1e;
+	height: 30px;
+	color: yellow;
+}
+.text-form {
+	width: 80%;
+	height: 30px;
+	color: #1e1e1e;
+}
+#footer-bottom {
+	background-color:#000 ;
+	text-align: center;
+	padding: 20px 0;
+}
+.content-bottom {
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
