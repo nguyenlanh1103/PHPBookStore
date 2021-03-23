@@ -1,3 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.section-content h2 {
+			font-size: 30px;
+			text-transform: uppercase;
+			position: relative;
+			margin-top: 50px;
+			line-height: normal;
+			
+		}
+		.section-content h2::before {
+			width: 50px;
+		}
+		.line {
+			margin-top: 25px;
+			width: 40px;
+			height: 6px;
+			background: #ccc;
+			margin: 20px auto 0;
+			margin-bottom: 25px;
+		}
+		.books-listing-4 {
+			float: left;
+			/* width: 100%; */
+			padding: 30px 30px 50px 30px;
+			border: solid 1px #d8d8d8;
+			text-align: center;
+			position: relative;
+			margin-bottom: 30px;
+		}
+		.books-listing-4 .kode-thumb {
+			box-shadow: none;
+		}
+		.books-listing-4 .kode-thumb {
+			float: left;
+			width: 100%;
+			margin-bottom: 15px;
+			position: relative;
+			/* box-shadow: 28px 0px 0px -20px rgb(0 0 0 / 20%); */
+		}
+		.home-combo .kode-text {
+			height: 80px;
+		}
+		.books-listing-4 .kode-text {
+			float: left;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>
 <?php
 	class category{
 		public $id;
@@ -27,11 +86,12 @@
 					$id = $row['id']; 
 					$xau .='
 						<div class="container">
-							<div class="text">
-								<hr class="line-brand ">
-								<h2 class ="text-brand"> '.$row['booktitle'].' </h2>
-								<hr class="line-brand">
-							</div>
+							<!--SECTION HEADING START-->
+								<div class="section-content">
+									<h2 class ="text-brand"> '.$row['booktitle'].' </h2>
+									<div class="line"></div>
+								</div>
+							<!--SECTION HEADING END-->
 						</div>';
 					$xau.= '<div class="container">';
 					$xau.= '<div class="row">';
@@ -39,14 +99,27 @@
 					$result1 = $conn->query($query1);
 					while ($row1 = $result1->fetch_assoc()) {
 						$xau.= '
-							<div class="col-sm-3 ">
-								<div class="book">
-									<img src="'. $row1['image'].'" class="product-image">
-									<p> '.$row1['booktitle'].' </p>
-									<p style="margin-bottom: 5px;"> '.$row1['price'].' $ </p>
-									<button type="button" class="btn btn-success">Mua Hàng</button>
-								</div>	 
-							</div>
+						<!--BOOK LISTING START-->
+						<div class="col-md-3 col-sm-6 col-xs-6">
+						   <div class="books-listing-4 home-combo ">
+							  <div class="kode-thumb">
+									
+										<div class="book">
+											<img src="'. $row1['image'].'" class="product-image">
+											<p> '.$row1['booktitle'].' </p>
+											<div class="kode-text">
+												<form method="get" action="/phpbanhangsach/Login.php">
+													<button type="submit" class="btn btn-success">Mượn sách</button>
+												</form>
+      										</div>
+											
+										</div>
+								
+							  </div>
+							  
+						   </div>
+						</div>
+						<!--BOOK LISTING END-->
 						';
 					}
 					$xau.= '</div>';

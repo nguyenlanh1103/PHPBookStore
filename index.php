@@ -20,7 +20,6 @@
 	<?php
 		require('DataBase.php');
 		require('MasterPage.php');
-		echo myWrapper();
 		echo myMenu();
 		echo mySlider();
 		$query = "SELECT * FROM categorys";

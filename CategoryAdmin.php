@@ -34,7 +34,7 @@
                                             <thead>
                                                 <tr class="bg-primary">
                                                     <th>ID</th>
-                                                    <th>Book Title</th>
+                                                    <th>Tên Sách</th>
                                                     <!-- <th width="20%">Ảnh sản phẩm</th> -->
                                                     <th>Tùy chọn</th>
                                                 </tr>

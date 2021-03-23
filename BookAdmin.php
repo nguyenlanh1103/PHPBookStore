@@ -60,10 +60,11 @@
                                         <thead>
                                             <tr class="bg-primary">
                                                 <th>ID</th>
-                                                <th>Name</th>
-                                                <th>Description</th>
-                                                <th>Price</th>
-                                                <th>Brand Id</th>
+                                                <th>Tên</th>
+                                                <th>Miêu Tả</th>
+                                                <th>Giá</th>
+                                                <th>Id Nhãn Hiệu</th>
+                                                <th>Ảnh </th>
                                                 <th>Tùy chọn</th>
                                             </tr>
                                         </thead>
@@ -81,6 +82,7 @@
                                                                                         echo "<td>" . $row['describes'] . "</td>";
                                                                                         echo "<td>" . $row['price'] . "</td>";
                                                                                         echo "<td>" . $row['category_id'] . "</td>";
+                                                                                        echo "<td>"  . $row['image'] .  "</td>";
                                                             echo " <td><a href='Books/Update.php?id=" . $row['id'] . "' class='btn btn-primary'><i class='fa fa-pencil' aria-hidden='true'></i> Sửa</a>
                                                             <a href='Books/Delete.php?id=" . $row['id']."' 
                                                             onclick='location.href=showDele()' class='btn btn-danger' ><i class='fa fa-trash' aria-hidden='true'></i> Xóa</a>

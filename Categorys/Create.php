@@ -18,11 +18,6 @@
       <label for="name">Tên Thể Loại:</label>
       <input type="name" class="form-control" id="name" placeholder="VD: thiếu nhi, SGK..." name="name">
     </div>
-    <div class="form-group form-check">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-      </label>
-    </div>
     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>

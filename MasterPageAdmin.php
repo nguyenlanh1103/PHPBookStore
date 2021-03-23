@@ -8,11 +8,11 @@
             <div class="list-group list-group-flush">
                 <a href="CategoryAdmin.php" class="list-group-item list-group-item-action bg-light">
                     <i class="fa fa-table"></i>
-                    <span>Categorys</span>
+                    <span>Thể loại</span>
                 </a>
                 <a href="BookAdmin.php" class="list-group-item list-group-item-action bg-light">
                     <i class="fa fa-table"></i>
-                    <span>Books</span>
+                    <span>  Sách </span>
                 </a>
             </div>
             </div>

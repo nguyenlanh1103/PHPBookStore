@@ -1,0 +1,23 @@
+.product-review-tabs {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.product-review-tabs .nav-tabs {
+    margin: 0px;
+}
+.nav {
+    padding-left: 0;
+    list-style: none;
+}
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}

@@ -2,6 +2,8 @@
 <?php
     if(isset($_SESSION['username'])) {
         header('Location: index.php');
+    } elseif(isset($_SESSION['adminname'])) {
+        header('Location: BookAdmin.php');
     }
 ?>
 <!DOCTYPE html>
@@ -68,11 +70,12 @@
                     header('Location: index.php');
                 }
             }
-            
-
         }else{
             
             echo "Mat Khau sai!!!";
         }
+    }
+    if(isset($_POST['submit'])){
+        
     }
 ?>

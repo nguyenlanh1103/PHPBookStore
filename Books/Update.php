@@ -38,6 +38,11 @@
       <input type="name" class="form-control" id="name" value="<?php echo $price;   ?>" name="price">
     </div>
     <div class="form-group">
+      <label>Ảnh sản phẩm</label>
+      <input required id="img" type="file" name="product_image" class="form-control hidden" onchange="changeImg(this)">
+      <img id="avatar" class="thumbnail" width="300px" src="images/<?php echo $file_name?>">
+    </div>
+    <div class="form-group">
       <label for="name">Chọn Thương Hiệu:</label>
       <?php
         require ('../DataBase.php');
